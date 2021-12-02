@@ -32,12 +32,12 @@
 		"symfony/options-resolver": "^5",
 		"symfony/polyfill-mbstring": "^1",
 		"symfony/polyfill-php80": "^1.23.0",
-		"typo3/cms-backend": "^10.4",
-		"typo3/cms-core": "^10.4",
-		"typo3/cms-extbase": "^10.4",
-		"typo3/cms-frontend": "^10.4",
-		"typo3/cms-install": "^10.4",
-		"typo3/cms-lang": "^10.4"
+		"typo3/cms-backend": "^10.4 || ^11.5",
+		"typo3/cms-core": "^10.4 || ^11.5",
+		"typo3/cms-extbase": "^10.4 || ^11.5",
+		"typo3/cms-frontend": "^10.4 || ^11.5",
+		"typo3/cms-install": "^10.4 || ^11.5",
+		"typo3/cms-lang": "^10.4 || ^11.5"
 	},
 	"autoload": {
 		"psr-4": {
