@@ -30,7 +30,7 @@ class InlineRelationField extends AbstractField
             'collapseAll' => function (Options $options) {
                 return $options['maxitems'] > 5;
             },
-
+            'expandSingle' => false,
             'dbType' => function (Options $options) {
                 return DbFieldDefinition::getIntForNumberRange(0, $options['maxitems']);
             },
