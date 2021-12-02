@@ -30,7 +30,7 @@ class InlineRelationField extends AbstractField
             'collapseAll' => function (Options $options) {
                 return $options['maxitems'] > 5;
             },
-
+            'expandSingle' => false,
             'dbType' => function (Options $options) {
                 return DbFieldDefinition::getIntForNumberRange(0, $options['maxitems']);
             },
@@ -128,6 +128,7 @@ class InlineRelationField extends AbstractField
             ],
             'appearance' => [
                 'collapseAll' => $this->getOption('collapseAll') ? 1 : 0,
+                'expandSingle' => $this->getOption('expandSingle') ? 1 : 0,
                 'useSortable' => $canBeSorted,
                 'showPossibleLocalizationRecords' => $canLocalize,
                 'showRemovedLocalizationRecords' => $canLocalize,
