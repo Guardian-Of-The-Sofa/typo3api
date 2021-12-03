@@ -244,6 +244,7 @@ class AbstractFieldTest extends UnitTestCase
         $field = $this->createFieldInstance($fieldName, ['displayCond' => 'some condition']);
         $this->assertBasicCtrlChange($field);
         $this->assertEquals('some condition', $field->getColumns($stubTable)[$fieldName]['displayCond']);
+        $this->assertEquals('reload', $field->getColumns($stubTable)[$fieldName]['onChange']);
         $this->assertBasicPalette($field);
         $this->assertBasicShowItem($field);
         $this->assertBasicDatabase($field);

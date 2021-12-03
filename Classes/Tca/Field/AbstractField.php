@@ -184,6 +184,7 @@ abstract class AbstractField implements TcaConfigurationInterface
 
         if ($this->getOption('displayCond') !== null) {
             $column['displayCond'] = $this->getOption('displayCond');
+            $column['onChange'] = 'reload';
         }
 
         return [
