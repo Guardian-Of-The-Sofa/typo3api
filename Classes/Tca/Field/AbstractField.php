@@ -84,7 +84,7 @@ abstract class AbstractField implements TcaConfigurationInterface
         $resolver->setAllowedTypes('exclude', 'bool');
         $resolver->setAllowedTypes('dbType', 'string');
         $resolver->setAllowedTypes('localize', 'bool');
-        $resolver->setAllowedTypes('displayCond', ['string', 'null']);
+        $resolver->setAllowedTypes('displayCond', ['string', 'array', 'null']);
         $resolver->setAllowedTypes('useAsLabel', 'bool');
         $resolver->setAllowedTypes('searchField', 'bool');
         $resolver->setAllowedTypes('useForRecordType', 'bool');
